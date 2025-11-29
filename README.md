@@ -49,6 +49,7 @@ o	First, load the netlist. You can browse for the file and select “Top cell : 
 
 o	An MMMC browser Pops Up.
 
+
 <img width="819" height="670" alt="image" src="https://github.com/user-attachments/assets/12b66c0e-44d0-437e-878e-7620932e7edd" />
 
 The order of adding the MMMC Objects is as follows. 
@@ -70,30 +71,43 @@ Adding Liberty Files (slow.lib, fast.lib) under “Library Sets
 • add slow.lib with a label Slow or any identifier of your own.
 
 ### Fig.1 Add slow Library set
+![WhatsApp Image 2025-11-23 at 16 54 47_eb8cdafa](https://github.com/user-attachments/assets/3b8b4542-20d1-409a-98e9-994bc5dac73c)
+
 
 • add fast.lib with a label Fast or any identifier of your own.
 
 ### Fig.2 Add fast Library set
+![WhatsApp Image 2025-11-23 at 16 54 49_6c2acaa6](https://github.com/user-attachments/assets/01bed0aa-3601-48d9-bffb-10cbeebfdbc7)
+
 
 • Adding RC Corners can also be done in a similar process. The temperature value can be found under the corresponding liberty file. Also, cap table and RC Tech files can be added from Foundry where available.
 
 ### Fig.3 Add RC corner
+![WhatsApp Image 2025-11-23 at 16 54 51_ae80e431](https://github.com/user-attachments/assets/4b9eb83b-f0dd-400f-a63d-03e9c5858f96)
+
 
 • Delay Corners are formed by combining Library Sets with RC Corners.
 
 ### Fig.4 Add Delay corner Max_delay & Min_delay
+![WhatsApp Image 2025-11-23 at 16 54 48_37759e50](https://github.com/user-attachments/assets/4619076e-75ba-44cc-b94b-50e4f20ee3c5)
+
 
 • Similarly, SDC can be read under the MMMC Object of “Constraints”.
 
 ### Fig.5 SDC Constraint file
+![WhatsApp Image 2025-11-23 at 16 54 50_bfa45441](https://github.com/user-attachments/assets/62aba04c-76d0-4ced-a8b5-36f0f9d99ced)
+
 
 • Analysis Views are formed from combinations of SDC and Delay Corner.
 
 ### Fig.6 Add Analysis View Worstcase & Bestcase
+![WhatsApp Image 2025-11-23 at 16 52 11_bea307f0](https://github.com/user-attachments/assets/62a54e8f-8a9d-4f9e-b053-b3f76e29812d)
 
 • Once “Best” and “Worst” Analysis views are created, assign them to Setup and Hold.
 
 ### Fig.7 Add Setup Analysis View & Hold Analysis View
+![WhatsApp Image 2025-11-23 at 16 52 11_57992837](https://github.com/user-attachments/assets/23e1cc27-0195-4583-bf61-b27a3623ebf0)
+
 
 • Once all the process is done, Click on “Save&Close” and save the script generated with any name of your choice. 
 
@@ -108,6 +122,9 @@ In the Import Design window click the save option to save the Default.globals fi
 • A rectangular or square box appears in your GUI if and only if all the inputs are read properly.
 
 ### Fig.8 Core area
+
+![WhatsApp Image 2025-11-23 at 16 54 50_52cd9d94](https://github.com/user-attachments/assets/892adac5-492f-4c76-8445-e54a7c9494ff)
+
 
 • The internal area of the box is called “Core Area”. 
 
@@ -128,6 +145,8 @@ In the Import Design window click the save option to save the Default.globals fi
 • Select Floorplan → Specify Floorplan to modify/add concerned values to the above Factors. On adding/modifying the concerned values, the core area is also modified.
 
 ### Fig.9 Specify Floorplan 
+![WhatsApp Image 2025-11-23 at 16 54 49_aeea09e2](https://github.com/user-attachments/assets/e736f793-6faf-4044-992a-fffe3b86a339)
+
 
 • The Yellow patch on the Left Bottom are the group of “Unassigned pins” which are to be  placed along the IO Boundary along with the Standard Cells [Gates].
 
@@ -172,6 +191,8 @@ Under Connect Global Net Connects, we create two pins, one for VDD and one for V
 • After the Special Route is complete, all the Standard Cell Rows turn to the Color coded for Metal 1 
 
 ### Fig.10 Power plan 
+![WhatsApp Image 2025-11-23 at 16 54 53_c156a953](https://github.com/user-attachments/assets/363ce273-e98e-44de-bf28-27ffd21a6aa0)
+
 
 The complete Power Planning process makes sure Every Standard Cell receives enough power to operate smoothly.
 
@@ -184,6 +205,10 @@ The complete Power Planning process makes sure Every Standard Cell receives enou
 • All the Standard Cells and Pins are placed as per the communication between them, i.e., Two communicating Cells are placed as close as possible so that shorter Net lengths can be used for connections as Shorter Net Lengths enable Better Timing Results.
 
 ### Fig.11 Placement of standard Cells 
+![WhatsApp Image 2025-11-23 at 16 54 53_436cb48e](https://github.com/user-attachments/assets/7a98d988-97de-4bab-b0e4-6feac5c3c263)
+
+![WhatsApp Image 2025-11-23 at 16 54 50_747a05ce](https://github.com/user-attachments/assets/399833c3-e395-4191-8805-a12b1fb8055a)
+
 
 • You can toggle the Layer Visibility from the list on the Right. The List of Layers available are shown on the right under “Layer” tab with colour coding.
 
